@@ -1,10 +1,12 @@
-node_modules/
+# Cloudflare Wrangler - archivos locales
+.wrangler/
+
+# Next.js
 .next/
 out/
-.env*
-!.env.example
-*.tsbuildinfo
-.DS_Store
+node_modules/
 
+# Variables de entorno
 .env
-.env.local
+.env.*
+!.env.example
