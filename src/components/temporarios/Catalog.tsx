@@ -215,14 +215,13 @@ export function Catalog({ properties }: CatalogProps) {
             {visible.length > 0 ? (
             <div className={styles.grid}>
                 {visible.map((property) => (
-                    <Reveal delay={0.2}>
-                        <PropertyCard
-                            key={property.id}
-                            property={property}
-                        />
-
-                    </Reveal>   
-                ))}
+                    <Reveal
+                        key={property.id}
+                        delay={0.2}
+                    >
+                        <PropertyCard property={property} />
+                    </Reveal>
+                    ))}
             </div>
             ) : (
             <div className={styles.empty}>
