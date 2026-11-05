@@ -1,0 +1,7 @@
+.section { padding: 108px 0; background: #805D65; color: var(--white); text-align: center; }
+.section h2 { margin: 18px 0 22px; font-size: clamp(3rem,5.6vw,5.8rem); line-height: 1.05; letter-spacing: -.045em; }
+.section h2 em { color: var(--rose-soft); }
+.section p:not(.eyebrow) { max-width: 720px; margin: 0 auto 30px; color: rgb(255 252 248 / 88%); line-height: 1.8; }
+.section :global(.btn) { background: var(--white); color: var(--brown); border-color: var(--white); }
+.section :global(.btn):hover { background: var(--sage-light); border-color: var(--sage-light); color: var(--brown); }
+@media (max-width: 700px) { .section { padding: 76px 0; } }

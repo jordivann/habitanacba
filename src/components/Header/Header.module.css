@@ -1,0 +1,138 @@
+.header {
+  position: relative;
+  z-index: 20;
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+}
+
+.headerHome {
+  position: absolute;
+  inset: 0 0 auto 0;
+  background: transparent;
+  border-bottom: 0;
+}
+
+.inner {
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 1.55rem;
+  letter-spacing: 0.18em;
+  line-height: 1.1;
+  position: relative;
+}
+
+.brandDot {
+  position: absolute;
+  left: calc(100% - 0.18em);
+  top: -0.12em;
+  color: var(--rose);
+}
+
+.brand small {
+  margin-top: 10px;
+  font-size: 0.54rem;
+  letter-spacing: 0.33em;
+  font-weight: 600;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2.4vw, 38px);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav a:not(.contact):hover {
+  color: var(--mauve);
+}
+
+.contact {
+  padding: 13px 18px;
+  border: 1px solid var(--brown);
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.contact:hover {
+  background: var(--brown);
+  color: var(--white);
+}
+
+.mobileMenu {
+  display: none;
+  position: relative;
+}
+
+.mobileMenu summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.mobileMenu summary::-webkit-details-marker {
+  display: none;
+}
+
+.mobileMenu nav {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  padding: 18px 22px;
+  gap: 18px;
+  box-shadow: 0 16px 35px rgba(66, 32, 31, 0.14);
+}
+
+.headerHome .brand,
+.headerHome .nav a,
+.headerHome .mobileMenu summary {
+  color: var(--white);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.14);
+}
+
+.headerHome .brandDot {
+  color: #f3dfd7;
+}
+
+.headerHome .contact {
+  border-color: rgba(255, 252, 248, 0.9);
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.headerHome .contact:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--white);
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  .inner {
+    min-height: 80px;
+  }
+
+  .brand {
+    font-size: 1.32rem;
+  }
+}

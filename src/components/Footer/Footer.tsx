@@ -1,0 +1,4 @@
+import Link from 'next/link';
+import { site } from '@/lib/site';
+import styles from './Footer.module.css';
+export function Footer(){return <footer className={styles.footer}><div className={`container ${styles.main}`}><div><p className={styles.logo}>HABITANA<span>.</span></p><p>Espacios para estar.<br />Gestión para confiar.</p></div><div><p className={styles.heading}>Explorá</p>{site.nav.map(item=><Link key={item.href} href={item.href}>{item.label}</Link>)}</div><div><p className={styles.heading}>Hablemos</p><p>Estamos preparando nuestros canales de atención.</p><Link href="/contacto" className={styles.link}>Ir a contacto ↗</Link></div></div><div className={`container ${styles.bottom}`}><span>© {new Date().getFullYear()} HABITANA. Todos los derechos reservados.</span><span>Gestión y alquileres temporarios</span></div></footer>}

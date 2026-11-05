@@ -1,0 +1,62 @@
+/* HomeHighlights — composicion de cierre con burbuja pistacho */
+.section { position: relative; isolation: isolate; overflow: hidden; padding: 104px 0 116px; background: var(--cream); }
+.section::after { content: ''; position: absolute; width: 500px; height: 500px; right: -180px; bottom: -260px; border-radius: 50%; background: rgb(201 208 180 / 22%); z-index: -1; pointer-events: none; }
+.grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px; margin-top: 34px; }
+.grid > div, .grid article { height: 100%; }
+.card { min-height: 280px; padding: 28px 28px 32px; border: 1px solid var(--line); background: var(--white); }
+.number { display: inline-block; margin-bottom: 28px; color: var(--mauve); font-size: .78rem; font-weight: 700; letter-spacing: .18em; }
+.card h3 { margin: 0 0 16px; font-size: 2rem; line-height: 1.08; letter-spacing: -.03em; }
+.card p { margin: 0; color: var(--text-secondary); line-height: 1.75; }
+@media (max-width: 950px) { .grid { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .section { padding: 76px 0 82px; } .section::after { width: 320px; height: 320px; right: -125px; bottom: -165px; } }
+
+.grid > div { height: 100%; }
+.grid article { height: 100%; }
+
+
+/* ============================================
+   HOME HIGHLIGHTS — FONDO ORGÁNICO
+============================================ */
+
+.section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--cream);
+  padding: 104px 0 116px;
+}
+
+/* Burbuja de cierre inferior derecha */
+
+.section::after {
+  content: "";
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -180px;
+  bottom: -260px;
+
+  border-radius: 50%;
+  background: rgba(197, 206, 170, 0.13);
+
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Responsive */
+
+@media (max-width: 760px) {
+  .section {
+    padding: 76px 0 82px;
+  }
+
+  .section::after {
+    width: 320px;
+    height: 320px;
+
+    right: -125px;
+    bottom: -165px;
+  }
+}

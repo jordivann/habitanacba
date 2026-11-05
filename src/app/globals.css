@@ -1,0 +1,97 @@
+
+
+:root {
+  /* ======================================
+     HABITANA — IDENTIDAD PRINCIPAL
+  ====================================== */
+
+  --rose: #CDAEA5;
+  --cream: #F7F3EE;
+  --olive: #89947D;
+  --brown: #51413D;
+
+  /* ======================================
+     VERDES BOTÁNICOS
+  ====================================== */
+
+  --pistachio: #C9D0B4;
+  --sage: #89947D;
+  --forest: #68745D;
+  --sage-light: #E9ECDF;
+
+  /* ======================================
+     ROSAS Y TONOS TIERRA
+  ====================================== */
+
+  --mauve: #9A797B;
+  --sand: #EADFD6;
+  --gold: #A58A69;
+  --stone: #97867B;
+
+  --rose-soft: #EBD8D5;
+  --rose-deep: #8E6265;
+
+  /* ======================================
+     SUPERFICIES
+  ====================================== */
+
+  --white: #FFFCF8;
+  --surface: #F0E9E2;
+  --surface-soft: #FAF7F3;
+
+  /* ======================================
+     TEXTOS
+  ====================================== */
+
+  --text-primary: #51413D;
+  --text-secondary: #756A63;
+  --text-muted: #877B73;
+
+  /* ======================================
+     BORDES Y EFECTOS
+  ====================================== */
+
+  --line: rgba(81, 65, 61, 0.12);
+  --line-soft: rgba(81, 65, 61, 0.07);
+
+  --shadow-soft:
+    0 16px 45px rgba(55, 38, 30, 0.08);
+
+  /* ======================================
+     INTERACCIONES
+  ====================================== */
+
+  --accent: #A87879;
+  --accent-hover: #8E6265;
+  --focus: #8E6265;
+
+  /* Contraste para botones principales */
+  --accent-solid: #8E6265;
+  --accent-text: #FFFCF8;
+}
+
+
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--cream); color:var(--brown); font-family:Arial,Helvetica,sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:inherit; text-decoration:none; }
+button, input, textarea { font:inherit; }
+button { cursor:pointer; }
+::selection { background:var(--rose); color:var(--brown); }
+.container { width:min(1200px,calc(100% - 64px)); margin-inline:auto; }
+.serif { font-family:Georgia,'Times New Roman',serif; font-weight:400; }
+.eyebrow { font-size:.72rem; font-weight:700; letter-spacing:.23em; text-transform:uppercase; }
+.btn { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:13px 24px; border:1px solid var(--accent-solid); background:var(--accent-solid); color:var(--accent-text); font-size:.77rem; text-transform:uppercase; letter-spacing:.14em; font-weight:700; transition:background .2s,color .2s,transform .2s; }
+.btn:hover { background:var(--accent-hover); border-color:var(--accent-hover); transform:translateY(-2px); }
+.btnOutline { background:transparent; color:var(--brown); border-color:var(--brown); }
+.btnOutline:hover { color:var(--white); }
+.section { padding:100px 0; }
+.sectionTitle { font-size:clamp(2.4rem,4.5vw,4.8rem); line-height:1.05; letter-spacing:-.035em; margin:16px 0 22px; }
+.muted { color:#6f625c; line-height:1.75; }
+.skipLink { position:absolute; top:-100px; left:12px; z-index:100; background:white; padding:12px; }
+.skipLink:focus { top:12px; }
+@media(max-width:700px){.container{width:min(100% - 36px,1200px)}.section{padding:68px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* Accesibilidad — contorno de teclado visible */
+:where(a, button, input, textarea, select):focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }

@@ -1,0 +1,543 @@
+
+/* ============================================
+   HABITANA — NOSOTRAS
+============================================ */
+
+/* ELEMENTOS COMPARTIDOS */
+
+.eyebrow {
+  margin: 0 0 24px;
+  color: var(--rose-deep);
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  margin: 0;
+  color: var(--brown);
+  font-size: clamp(2.9rem, 4.6vw, 5.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  font-weight: 400;
+}
+
+.sectionTitle em {
+  color: var(--mauve);
+  font-weight: 400;
+}
+
+/* ============================================
+   HERO
+============================================ */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--sand);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  padding-top: 115px;
+  padding-bottom: 125px;
+  text-align: center;
+}
+
+.heroTitle {
+  max-width: 990px;
+  margin: 0 auto 29px;
+  color: var(--brown);
+  font-size: clamp(3.5rem, 6vw, 6.7rem);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+}
+
+.heroTitle span {
+  display: block;
+  margin-top: 8px;
+  color: var(--rose-deep);
+  font-style: italic;
+}
+
+.heroDescription {
+  max-width: 630px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  font-size: 1.04rem;
+  line-height: 1.85;
+}
+
+.heroBubble {
+  position: absolute;
+  right: -180px;
+  bottom: -290px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(255, 252, 248, 0.35);
+  pointer-events: none;
+}
+
+/* ============================================
+   GALERÍA
+============================================ */
+
+.gallerySection {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0 125px;
+  background: var(--cream);
+}
+
+.galleryHeading {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.galleryHeading > p:last-child {
+  max-width: 540px;
+  margin: 22px 0 0;
+  color: var(--text-secondary);
+  line-height: 1.85;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr 0.8fr;
+  grid-template-rows: 245px 245px;
+  gap: 21px;
+  align-items: stretch;
+}
+
+.photoMain {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.photoSecond {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.photoThird {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.photoFourth {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+.photoFigure {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+.photoFrame {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  background: var(--surface);
+}
+
+.photoMain .photoFrame {
+  border-radius: 180px 180px 5px 5px;
+}
+
+.photoSecond .photoFrame {
+  border-radius: 95px 95px 5px 5px;
+}
+
+.photoThird .photoFrame {
+  border-radius: 5px 95px 5px 5px;
+}
+
+.photoFourth .photoFrame {
+  border-radius: 5px 5px 95px 5px;
+}
+
+.photo {
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.65s ease;
+}
+
+.photoFigure:hover .photo {
+  transform: scale(1.035);
+}
+
+.photoCaption {
+  padding-top: 10px;
+  color: var(--stone);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.gallerySignature {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.gallerySignature span {
+  color: var(--rose-deep);
+  font-family: var(--font-caveat), cursive;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 500;
+}
+
+/* ============================================
+   NUESTRA HISTORIA
+============================================ */
+
+.story {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0 135px;
+  background: var(--sage-light);
+}
+
+.story::before {
+  content: "";
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  top: -270px;
+  left: -200px;
+  border-radius: 50%;
+  background: rgba(201, 208, 180, 0.38);
+  pointer-events: none;
+}
+
+.storyGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: clamp(45px, 8vw, 125px);
+  align-items: start;
+}
+
+.storyHeading {
+  max-width: 540px;
+}
+
+.storyContent {
+  max-width: 560px;
+}
+
+.storyContent > p {
+  margin: 0 0 23px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.storyNote {
+  margin-top: 42px;
+  padding: 35px 38px;
+  background: var(--white);
+  border: 1px solid var(--line-soft);
+  border-radius: 4px;
+  box-shadow: var(--shadow-soft);
+  transform: rotate(-1deg);
+}
+
+.noteLabel {
+  color: var(--mauve);
+  font-size: 0.63rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.storyNote p {
+  margin: 19px 0;
+  color: var(--brown);
+  font-family: Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.9rem);
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.noteSignature {
+  display: block;
+  color: var(--rose-deep);
+  text-align: right;
+  font-family: var(--font-caveat), cursive;
+  font-size: 2rem;
+}
+
+/* ============================================
+   VALORES
+============================================ */
+
+.values {
+  padding: 115px 0 125px;
+  background: var(--white);
+}
+
+.valuesHeading {
+  margin-bottom: 45px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.valueReveal {
+  height: 100%;
+}
+
+.value {
+  height: 100%;
+  padding: 33px 32px 39px;
+  border: 1px solid var(--line);
+  background: var(--surface-soft);
+}
+
+.value:nth-child(2) {
+  background: var(--surface-soft);
+}
+
+.valueNumber {
+  display: block;
+  margin-bottom: 32px;
+  color: var(--mauve);
+  font-size: 0.76rem;
+  letter-spacing: 0.18em;
+}
+
+.value h3 {
+  margin: 0 0 18px;
+  color: var(--brown);
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.value p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* ============================================
+   CONTACTO
+============================================ */
+
+.contact {
+  padding: 105px 0;
+  background: #805D65;
+  color: var(--white);
+  text-align: center;
+}
+
+.contactEyebrow {
+  margin: 0 0 25px;
+  color: #F0DAD5;
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.19em;
+}
+
+.contact h2 {
+  margin: 0 auto 25px;
+  font-size: clamp(3.2rem, 5.7vw, 6rem);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+  font-weight: 400;
+}
+
+.contact h2 em {
+  color: #F0DAD5;
+}
+
+.contact p:not(.contactEyebrow) {
+  max-width: 620px;
+  margin: 0 auto 33px;
+  color: #FFF6F3;
+  line-height: 1.85;
+}
+
+.contactButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  min-height: 53px;
+  padding: 15px 32px;
+  background: var(--white);
+  color: var(--brown);
+  border-radius: 100px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.contactButton:hover {
+  background: var(--rose-soft);
+  transform: translateY(-2px);
+}
+
+.contactButton:focus-visible {
+  outline: 3px solid var(--white);
+  outline-offset: 4px;
+}
+
+/* ============================================
+   TABLET
+============================================ */
+
+@media (max-width: 1000px) {
+  .gallery {
+    grid-template-rows: 210px 210px;
+    gap: 15px;
+  }
+
+  .storyGrid {
+    gap: 45px;
+  }
+
+  .valuesGrid {
+    gap: 14px;
+  }
+
+  .value {
+    padding: 28px 24px;
+  }
+}
+
+/* ============================================
+   MOBILE
+============================================ */
+
+@media (max-width: 760px) {
+  .heroInner {
+    padding-top: 85px;
+    padding-bottom: 95px;
+  }
+
+  .heroTitle {
+    font-size: clamp(3rem, 10vw, 4.7rem);
+  }
+
+  .heroDescription {
+    font-size: 0.96rem;
+  }
+
+  .gallerySection,
+  .story,
+  .values,
+  .contact {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+  .sectionTitle {
+    font-size: clamp(2.8rem, 9vw, 4.2rem);
+  }
+
+  .galleryHeading {
+    margin-bottom: 35px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 340px 200px 190px;
+    gap: 12px;
+  }
+
+  .photoMain {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .photoSecond {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .photoThird {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .photoFourth {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+
+  .photoMain .photoFrame {
+    border-radius: 120px 120px 5px 5px;
+  }
+
+  .photoSecond .photoFrame {
+    border-radius: 70px 70px 5px 5px;
+  }
+
+  .gallerySignature {
+    margin-top: 38px;
+  }
+
+  .storyGrid,
+  .valuesGrid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .storyNote {
+    padding: 30px 26px;
+  }
+
+  .valuesGrid {
+    gap: 13px;
+  }
+
+  .value {
+    padding: 27px;
+  }
+
+  .valueNumber {
+    margin-bottom: 20px;
+  }
+
+  .contact h2 {
+    font-size: clamp(2.9rem, 9vw, 4.6rem);
+  }
+}
+
+@media (max-width: 380px) {
+  .gallery {
+    grid-template-rows: 285px 165px 165px;
+    gap: 8px;
+  }
+
+  .photoCaption {
+    font-size: 0.55rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo,
+  .contactButton {
+    transition: none;
+  }
+}

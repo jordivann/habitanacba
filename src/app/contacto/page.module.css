@@ -1,0 +1,599 @@
+
+/* ============================================
+   HABITANA — CONTACTO
+============================================ */
+
+/* ESTILOS COMPARTIDOS */
+
+.eyebrow {
+  margin: 0 0 22px;
+  color: var(--rose-deep);
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  margin: 0;
+  color: var(--brown);
+  font-size: clamp(2.8rem, 4.7vw, 5.1rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+.sectionTitle em {
+  color: var(--mauve);
+  font-weight: 400;
+}
+
+/* ============================================
+   HERO
+============================================ */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--sand);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  max-width: 1060px;
+  padding-top: clamp(100px, 12vw, 170px);
+  padding-bottom: clamp(110px, 13vw, 180px);
+  text-align: center;
+}
+
+.heroTitle {
+  max-width: 1000px;
+  margin: 0 auto 31px;
+  color: var(--brown);
+  font-size: clamp(3.4rem, 6vw, 6.6rem);
+  font-weight: 400;
+  line-height: 1.07;
+  letter-spacing: -0.055em;
+}
+
+.heroTitle em {
+  display: block;
+  margin-top: 8px;
+  color: var(--rose-deep);
+  font-weight: 400;
+}
+
+.heroLead {
+  max-width: 610px;
+  margin: 0 auto 36px;
+  color: var(--text-secondary);
+  font-size: 1.04rem;
+  line-height: 1.9;
+}
+
+.heroButton,
+.pathButton,
+.closingButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  min-height: 54px;
+  padding: 15px 27px;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 0.76rem;
+  font-weight: 650;
+  letter-spacing: 0.045em;
+  text-decoration: none;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.heroButton {
+  background: var(--accent-solid);
+  color: var(--accent-text);
+}
+
+.heroButton:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.heroShape {
+  position: absolute;
+  z-index: -1;
+  width: clamp(310px, 36vw, 550px);
+  aspect-ratio: 1;
+  right: -160px;
+  bottom: -340px;
+  border-radius: 50%;
+  background: rgba(201, 208, 180, 0.36);
+  pointer-events: none;
+}
+
+/* ============================================
+   DOS CAMINOS
+============================================ */
+
+.paths {
+  padding: clamp(85px, 10vw, 135px) 0;
+  background: var(--cream);
+}
+
+.sectionHeading {
+  max-width: 690px;
+  margin-bottom: 49px;
+}
+
+.sectionHeading > p:last-child {
+  max-width: 570px;
+  margin: 22px 0 0;
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.85;
+}
+
+.pathsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: clamp(20px, 3vw, 36px);
+}
+
+.pathReveal {
+  height: 100%;
+  min-width: 0;
+}
+
+.pathCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 510px;
+  height: 100%;
+  overflow: hidden;
+  padding: clamp(34px, 4vw, 57px);
+  border-radius: 7px 125px 7px 7px;
+}
+
+.pathCard::after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  right: -130px;
+  bottom: -125px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.ownerCard {
+  background: var(--sage-light);
+}
+
+.ownerCard::after {
+  background: rgba(137, 148, 125, 0.16);
+}
+
+.guestCard {
+  background: var(--sand);
+  border-radius: 125px 7px 7px 7px;
+}
+
+.guestCard::after {
+  background: rgba(205, 174, 165, 0.3);
+}
+
+.pathIcon {
+  display: grid;
+  place-items: center;
+  width: 63px;
+  height: 63px;
+  margin-bottom: 38px;
+  border: 1px solid rgba(81, 65, 61, 0.13);
+  border-radius: 50%;
+  color: var(--forest);
+  background: rgba(255, 252, 248, 0.46);
+}
+
+.guestCard .pathIcon {
+  color: var(--rose-deep);
+}
+
+.pathNumber {
+  margin: 0 0 20px;
+  color: var(--text-muted);
+  font-size: 0.67rem;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+}
+
+.pathCard h3 {
+  margin: 0 0 23px;
+  color: var(--brown);
+  font-size: clamp(2.45rem, 3.2vw, 3.75rem);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+
+.pathCard h3 em {
+  color: var(--mauve);
+  font-weight: 400;
+}
+
+.ownerCard h3 em {
+  color: var(--forest);
+}
+
+.pathDescription {
+  max-width: 455px;
+  margin: 0 0 30px;
+  color: var(--text-secondary);
+  font-size: 0.96rem;
+  line-height: 1.85;
+}
+
+.pathActions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: auto;
+}
+
+.pathButton {
+  min-height: 48px;
+  padding: 13px 21px;
+  background: var(--accent-solid);
+  color: var(--accent-text);
+  font-size: 0.72rem;
+}
+
+.pathButton:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.secondaryLink {
+  color: var(--brown);
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.secondaryLink:hover {
+  color: var(--accent-hover);
+}
+
+/* ============================================
+   CONTACTO DIRECTO
+============================================ */
+
+.directContact {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(90px, 11vw, 145px) 0;
+  background: var(--white);
+}
+
+.directGrid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: start;
+  gap: clamp(45px, 8vw, 120px);
+}
+
+.directIntro > p:last-child {
+  max-width: 540px;
+  margin: 28px 0 0;
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.9;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  padding: clamp(29px, 4vw, 49px);
+  background: var(--surface-soft);
+  border: 1px solid var(--line-soft);
+  border-radius: 8px 90px 8px 8px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 21px;
+}
+
+.contactItem + .contactItem {
+  padding-top: 33px;
+  border-top: 1px solid var(--line);
+}
+
+.detailIcon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--sage-light);
+  color: var(--forest);
+}
+
+.detailLabel {
+  display: block;
+  margin: 2px 0 12px;
+  color: var(--rose-deep);
+  font-size: 0.64rem;
+  font-weight: 650;
+  letter-spacing: 0.14em;
+}
+
+.detailValue {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0;
+  color: var(--brown);
+  font-family: Georgia, serif;
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+  font-weight: 400;
+  line-height: 1.3;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+a.detailValue:hover {
+  color: var(--accent-hover);
+}
+
+.contactItem p:not(.detailValue) {
+  margin: 12px 0 0;
+  color: var(--text-secondary);
+  font-size: 0.87rem;
+  line-height: 1.75;
+}
+
+/* ============================================
+   CIERRE
+============================================ */
+
+.closing {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0 105px;
+  background: #805D65;
+  color: var(--white);
+  text-align: center;
+}
+
+.closingIcon {
+  display: block;
+  margin: 0 auto 24px;
+  color: #F0DAD5;
+}
+
+.closing h2 {
+  margin: 0 0 22px;
+  font-size: clamp(3.5rem, 6vw, 6.5rem);
+  font-weight: 400;
+  line-height: 1.06;
+  letter-spacing: -0.05em;
+}
+
+.closing h2 em {
+  color: #F0DAD5;
+  font-weight: 400;
+}
+
+.closing p {
+  max-width: 450px;
+  margin: 0 auto 30px;
+  color: #FFF6F3;
+  font-size: 0.99rem;
+  line-height: 1.8;
+}
+
+.closingButton {
+  background: var(--white);
+  color: var(--brown);
+}
+
+.closingButton:hover {
+  background: var(--rose-soft);
+  transform: translateY(-2px);
+}
+
+.signature {
+  display: block;
+  margin-top: 43px;
+  color: #F5DDD6;
+  font-family: var(--font-caveat), cursive;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+/* ============================================
+   INTERACCIÓN Y ACCESIBILIDAD
+============================================ */
+
+.heroButton:focus-visible,
+.pathButton:focus-visible,
+.secondaryLink:focus-visible,
+.detailValue:focus-visible,
+.closingButton:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 5px;
+}
+
+.closingButton:focus-visible {
+  outline-color: var(--white);
+}
+
+/* ============================================
+   TABLET
+============================================ */
+
+@media (max-width: 1050px) {
+  .pathsGrid {
+    gap: 18px;
+  }
+
+  .pathCard {
+    min-height: 550px;
+    padding: 32px;
+  }
+
+  .pathCard h3 {
+    font-size: clamp(2.25rem, 3.7vw, 3rem);
+  }
+
+  .directGrid {
+    gap: 40px;
+  }
+}
+
+/* ============================================
+   MOBILE
+============================================ */
+
+@media (max-width: 760px) {
+  .heroInner {
+    padding-top: 94px;
+    padding-bottom: 105px;
+  }
+
+  .heroTitle {
+    font-size: clamp(3.1rem, 10vw, 4.8rem);
+  }
+
+  .heroLead {
+    font-size: 0.97rem;
+  }
+
+  .paths,
+  .directContact {
+    padding-top: 82px;
+    padding-bottom: 87px;
+  }
+
+  .sectionTitle {
+    font-size: clamp(2.8rem, 9vw, 4.2rem);
+  }
+
+  .sectionHeading {
+    margin-bottom: 35px;
+  }
+
+  .pathsGrid,
+  .directGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pathsGrid {
+    gap: 19px;
+  }
+
+  .pathCard {
+    min-height: 440px;
+    padding: 36px;
+    border-radius: 6px 95px 6px 6px;
+  }
+
+  .guestCard {
+    border-radius: 95px 6px 6px 6px;
+  }
+
+  .pathCard h3 {
+    font-size: clamp(2.65rem, 8vw, 3.6rem);
+  }
+
+  .pathIcon {
+    margin-bottom: 30px;
+  }
+
+  .directGrid {
+    gap: 38px;
+  }
+
+  .contactDetails {
+    border-radius: 7px 70px 7px 7px;
+  }
+
+  .closing {
+    padding: 90px 0;
+  }
+
+  .closing h2 {
+    font-size: clamp(3.2rem, 10vw, 4.8rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .heroButton,
+  .pathButton {
+    width: 100%;
+  }
+
+  .pathCard {
+    min-height: 0;
+    padding: 30px 25px 34px;
+  }
+
+  .pathActions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 21px;
+  }
+
+  .secondaryLink {
+    align-self: flex-start;
+  }
+
+  .contactDetails {
+    padding: 29px 22px;
+  }
+
+  .contactItem {
+    gap: 13px;
+  }
+
+  .detailIcon {
+    flex-basis: 43px;
+    width: 43px;
+    height: 43px;
+  }
+
+  .detailValue {
+    font-size: 1.3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroButton,
+  .pathButton,
+  .closingButton,
+  .secondaryLink {
+    transition: none;
+  }
+
+  .heroButton:hover,
+  .pathButton:hover,
+  .closingButton:hover {
+    transform: none;
+  }
+}

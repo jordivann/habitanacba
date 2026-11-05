@@ -1,0 +1,96 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 100svh;
+  overflow: hidden;
+  background: #88766d;
+  color: var(--white);
+}
+
+/* ============================================
+   HABITANA — HERO BACKGROUND
+============================================ */
+
+/* Fondo diurno */
+
+.media {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+
+  background-image: url('/images/home/canada.jpg');
+  background-position: center 48%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Fondo nocturno */
+
+.mediaNight {
+  background-image: url('/images/home/canadaNocturna.png');
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg,rgba(35,28,25,.26),rgba(35,28,25,.15) 32%,rgba(35,28,25,.36) 70%,rgba(35,28,25,.52));
+}
+.inner {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 155px 95px;
+}
+.content { width: 100%; max-width: 1120px; text-align: center; }
+.eyebrow { margin: 0 0 26px; color: #f5ebe4; font-size: .65rem; font-weight: 500; letter-spacing: .23em; line-height: 1.7; }
+.title { max-width: 1000px; margin: 0 auto 25px; font-size: clamp(3.7rem,6.2vw,6.4rem); font-weight: 400; letter-spacing: -.045em; line-height: 1.09; text-shadow: 0 3px 25px #0002; }
+.title span { display: block; margin-top: 5px; color: #f0dcd2; font-style: italic; }
+.lead { max-width: 570px; margin: 0 auto; color: #f7eee8; font-size: 1rem; line-height: 1.85; letter-spacing: .01em; }
+.search {
+  width: min(100%, 970px);
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1fr 1fr auto;
+  align-items: stretch;
+  margin: 36px auto 0;
+  padding: 5px;
+  border: 1px solid #ffffffa6;
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0 12px 30px #1e181424;
+  text-align: left;
+}
+.field { min-width: 0; min-height: 52px; display: flex; align-items: center; gap: 12px; padding: 7px 18px; border-right: 1px solid var(--line); color: var(--brown); }
+.field:nth-child(4) { border-right: 0; }
+.fieldText { min-width: 0; display: flex; flex: 1; flex-direction: column; justify-content: center; gap: 4px; }
+.fieldText strong { color: var(--sage); font-size: .62rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
+.fieldText > span { color: var(--brown); font-size: .78rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.arrow { flex-shrink: 0; color: var(--sage); }
+.searchAction { min-height: 52px; margin-left: 4px; padding: 0 25px; border-radius: 8px; display: flex; align-items: center; justify-content: center; gap: 12px; background: var(--accent); color: var(--white); font-size: .74rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+.zones { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+.zonesLabel { font-size: .69rem; letter-spacing: .11em; text-transform: uppercase; color: #fffaf5d1; }
+.chips { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+.chip { padding: 7px 13px; border: 1px solid #fffaf561; border-radius: 5px; background: #281c1621; color: #fffaf6; font-size: .75rem; backdrop-filter: blur(5px); }
+@media (max-width: 950px) {
+  .search { max-width: 640px; grid-template-columns: 1fr 1fr; gap: 5px; padding: 6px; }
+  .field { border: 0; border-radius: 7px; background: var(--surface-soft); }
+  .searchAction { grid-column: 1 / -1; margin: 0; }
+}
+@media (max-width: 700px) {
+  .inner { padding-block: 130px 65px; }
+  .eyebrow { font-size: .6rem; letter-spacing: .15em; }
+  .title { font-size: clamp(2.9rem,10vw,4.3rem); line-height: 1.12; }
+  .title span { margin-top: 10px; }
+  .lead { font-size: .92rem; line-height: 1.75; }
+  .zones { margin-top: 22px; gap: 11px; }
+  .chip { font-size: .7rem; }
+}
+@media (max-width: 550px) {
+  .search { grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 30px; padding: 5px; }
+  .field { min-height: 53px; padding: 8px 10px; }
+  .fieldText strong { font-size: .56rem; }
+  .fieldText > span { font-size: .69rem; }
+  .arrow { display: none; }
+  .searchAction { min-height: 46px; font-size: .72rem; }
+}

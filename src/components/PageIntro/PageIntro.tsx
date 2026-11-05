@@ -1,0 +1,2 @@
+import styles from './PageIntro.module.css';
+export function PageIntro({eyebrow,title,description}:{eyebrow:string;title:string;description:string}){return <section className={styles.hero}><div className="container"><p className="eyebrow">{eyebrow}</p><h1 className="serif">{title}</h1><p className={styles.description}>{description}</p></div><div className={styles.shape} aria-hidden="true" /></section>}

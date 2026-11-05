@@ -1,0 +1,903 @@
+[
+  {
+    "id": "0WWG1JLgjVEsvgPc8aMh",
+    "legacyId": "0WWG1JLgjVEsvgPc8aMh",
+    "slug": "alto-tucuman-4a",
+    "title": "ALTO TUCUMAN 4A",
+    "category": "Departamento",
+    "neighborhood": null,
+    "city": "Córdoba",
+    "province": "Córdoba",
+    "guests": 3,
+    "rooms": 2,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": true,
+    "published": false,
+    "nightlyRate": 77000,
+    "legacyNightlyRate": 69999,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "balcon",
+      "lavarropas",
+      "pet-friendly",
+      "ropa-blanca",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Un espacio práctico para disfrutar Córdoba con comodidad, ideal para quienes buscan una estadía sencilla y funcional.",
+    "description": [
+      "Este departamento de dos ambientes está pensado para recibir hasta tres huéspedes. Cuenta con aire acondicionado, Wi-Fi, televisión, lavarropas y balcón. La ropa de cama está incluida según las características registradas.",
+      "Una alternativa cómoda para descansar después de recorrer la ciudad."
+    ],
+    "images": [
+      "/images/temporarios/demo-arena.jpg",
+      "/images/temporarios/demo-oliva.jpg"
+    ],
+    "videos": [],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": null,
+    "coordinates": null,
+    "legacyColor": "#ffa424",
+    "pointsOfInterestLegacy": [],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "14:00",
+    "checkOutTime": "10:00",
+    "minimumNights": 3,
+    "depositPercentage": 50,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [],
+    "contentStatus": "draft"
+  },
+  {
+    "id": "YVjkeZ5vpNIlDdWLXqsf",
+    "legacyId": "YVjkeZ5vpNIlDdWLXqsf",
+    "slug": "alto-tucuman-7a",
+    "title": "ALTO TUCUMAN 7A",
+    "category": "Departamento",
+    "neighborhood": null,
+    "city": "Córdoba",
+    "province": "Córdoba",
+    "guests": 3,
+    "rooms": 2,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": true,
+    "published": false,
+    "nightlyRate": 80000,
+    "legacyNightlyRate": 69999,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "balcon",
+      "lavarropas",
+      "pet-friendly",
+      "ropa-blanca",
+      "secador-pelo",
+      "terraza",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Comodidad y espacios para desconectar durante tu visita a Córdoba.",
+    "description": [
+      "Departamento de dos ambientes con capacidad para hasta tres personas. Dispone de balcón, terraza, aire acondicionado, Wi-Fi, televisión, lavarropas y secador de pelo.",
+      "Una opción para organizar una escapada o una estadía de varios días."
+    ],
+    "images": [
+      "/images/temporarios/demo-arena.jpg",
+      "/images/temporarios/demo-oliva.jpg"
+    ],
+    "videos": [],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": null,
+    "coordinates": null,
+    "legacyColor": "#fd5858",
+    "pointsOfInterestLegacy": [],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "15:00",
+    "checkOutTime": "11:00",
+    "minimumNights": 2,
+    "depositPercentage": 30,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [],
+    "contentStatus": "draft"
+  },
+  {
+    "id": "Z1ObIqvE1TIxfWCDWJbD",
+    "legacyId": "Z1ObIqvE1TIxfWCDWJbD",
+    "slug": "alto-tucuman-7b",
+    "title": "ALTO TUCUMAN 7B",
+    "category": "Departamento",
+    "neighborhood": null,
+    "city": "Córdoba",
+    "province": "Córdoba",
+    "guests": 3,
+    "rooms": 2,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": true,
+    "published": false,
+    "nightlyRate": 72000,
+    "legacyNightlyRate": 60000,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "balcon",
+      "calefaccion",
+      "pet-friendly",
+      "ropa-blanca",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Un departamento para disfrutar de Córdoba a tu ritmo.",
+    "description": [
+      "Espacio de dos ambientes para hasta tres huéspedes, con balcón, calefacción, aire acondicionado, Wi-Fi y televisión. Cuenta con ropa de cama para la estadía.",
+      "Una propuesta funcional para combinar descanso y recorridos por la ciudad."
+    ],
+    "images": [
+      "/images/temporarios/demo-arena.jpg",
+      "/images/temporarios/demo-oliva.jpg"
+    ],
+    "videos": [],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": null,
+    "coordinates": null,
+    "legacyColor": "#fff1bd",
+    "pointsOfInterestLegacy": [],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "15:00",
+    "checkOutTime": "11:00",
+    "minimumNights": 2,
+    "depositPercentage": 30,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [],
+    "contentStatus": "draft"
+  },
+  {
+    "id": "ZG0aRdNYnYtfMsMqtXF6",
+    "legacyId": "ZG0aRdNYnYtfMsMqtXF6",
+    "slug": "la-escalerita-pb",
+    "title": "LA ESCALERITA PB",
+    "category": "Departamento",
+    "neighborhood": null,
+    "city": "Córdoba",
+    "province": "Córdoba",
+    "guests": 2,
+    "rooms": 2,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": true,
+    "published": false,
+    "nightlyRate": 63000,
+    "legacyNightlyRate": 55000,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "pet-friendly",
+      "ropa-blanca",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Una opción acogedora para una estadía tranquila en Córdoba.",
+    "description": [
+      "Departamento de dos ambientes con capacidad para dos personas. Dispone de Wi-Fi, aire acondicionado, televisión y ropa de cama.",
+      "Un espacio simple y funcional para disfrutar la ciudad con independencia."
+    ],
+    "images": [],
+    "videos": [],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": null,
+    "coordinates": null,
+    "legacyColor": "#BFA6E3",
+    "pointsOfInterestLegacy": [],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00",
+    "minimumNights": 2,
+    "depositPercentage": 50,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [],
+    "contentStatus": "draft"
+  },
+  {
+    "id": "ZcxSXeAij6i4ne7kIPrC",
+    "legacyId": "ZcxSXeAij6i4ne7kIPrC",
+    "slug": "alto-tucuman-4b",
+    "title": "ALTO TUCUMAN 4B",
+    "category": "Departamento",
+    "neighborhood": null,
+    "city": "Córdoba",
+    "province": "Córdoba",
+    "guests": 3,
+    "rooms": 2,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": true,
+    "published": false,
+    "nightlyRate": 76000,
+    "legacyNightlyRate": 60000,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "balcon",
+      "calefaccion",
+      "pet-friendly",
+      "ropa-blanca",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Un espacio cálido y funcional para tu próxima visita a Córdoba.",
+    "description": [
+      "Departamento de dos ambientes equipado para hasta tres personas, con balcón, aire acondicionado, calefacción, Wi-Fi y televisión.",
+      "Pensado para combinar momentos de descanso con la posibilidad de conocer la ciudad."
+    ],
+    "images": [
+      "/images/temporarios/demo-arena.jpg",
+      "/images/temporarios/demo-arena.jpg",
+      "/images/temporarios/demo-oliva.jpg"
+    ],
+    "videos": [],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": null,
+    "coordinates": null,
+    "legacyColor": "#BFA6E3",
+    "pointsOfInterestLegacy": [],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "15:00",
+    "checkOutTime": "10:00",
+    "minimumNights": 2,
+    "depositPercentage": 30,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [],
+    "contentStatus": "draft"
+  },
+  {
+    "id": "aIZE1PTHkyfvoTkAww8d",
+    "legacyId": "aIZE1PTHkyfvoTkAww8d",
+    "slug": "cofico-ideal",
+    "title": "COFICO IDEAL",
+    "category": "Departamento",
+    "neighborhood": "Cofico",
+    "city": "Córdoba",
+    "province": "Córdoba",
+    "guests": 3,
+    "rooms": 2,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": true,
+    "published": false,
+    "nightlyRate": 92000,
+    "legacyNightlyRate": 60000,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "balcon",
+      "estacionamiento",
+      "parrilla",
+      "pet-friendly",
+      "pileta",
+      "ropa-blanca",
+      "seguridad",
+      "terraza",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Una estadía para descubrir Córdoba desde el entorno de Cofico.",
+    "description": [
+      "Este departamento de dos ambientes tiene capacidad para hasta tres huéspedes. Entre sus comodidades figuran Wi-Fi, aire acondicionado, balcón, terraza, pileta, parrilla y estacionamiento.",
+      "Es una opción para disfrutar de la ciudad y disponer de espacios para relajarse. El acceso al estacionamiento requiere consultar previamente las dimensiones del vehículo."
+    ],
+    "images": [
+      "/images/temporarios/demo-arena.jpg"
+    ],
+    "videos": [],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": "El estacionamiento tiene entrada por montacargas, lo cual limita el tamaño del auto. Autos permitidos y similares: - Renault Duster - Fiat Chronos - Ford EcoSport Consultar por su auto. ",
+    "coordinates": null,
+    "legacyColor": "#003df5",
+    "pointsOfInterestLegacy": [],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "15:00",
+    "checkOutTime": "11:00",
+    "minimumNights": 3,
+    "depositPercentage": 30,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [
+      "El estacionamiento tiene acceso por montacargas. Consultar previamente si el vehículo es compatible con las dimensiones permitidas."
+    ],
+    "contentStatus": "draft"
+  },
+  {
+    "id": "bBJIHkVJMKj92OGSiXiD",
+    "legacyId": "bBJIHkVJMKj92OGSiXiD",
+    "slug": "casa-calma",
+    "title": "CASA CALMA",
+    "category": "Departamento",
+    "neighborhood": null,
+    "city": "Córdoba",
+    "province": "Córdoba",
+    "guests": 3,
+    "rooms": 2,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": true,
+    "published": false,
+    "nightlyRate": 88000,
+    "legacyNightlyRate": 60000,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "balcon",
+      "calefaccion",
+      "estacionamiento",
+      "pet-friendly",
+      "pileta",
+      "ropa-blanca",
+      "terraza",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Un lugar cómodo para disfrutar Córdoba sin apuros.",
+    "description": [
+      "Departamento de dos ambientes para hasta tres huéspedes, con balcón, terraza, pileta, aire acondicionado, calefacción, Wi-Fi y estacionamiento.",
+      "Una propuesta para quienes valoran un espacio funcional y momentos de descanso."
+    ],
+    "images": [
+      "/images/temporarios/demo-arena.jpg",
+      "/images/temporarios/demo-oliva.jpg"
+    ],
+    "videos": [],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": null,
+    "coordinates": null,
+    "legacyColor": "#BFA6E3",
+    "pointsOfInterestLegacy": [],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00",
+    "minimumNights": 2,
+    "depositPercentage": 50,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [],
+    "contentStatus": "draft"
+  },
+  {
+    "id": "bGoBr9sv7AQNe0Siu0Or",
+    "legacyId": "bGoBr9sv7AQNe0Siu0Or",
+    "slug": "habitana-firpo",
+    "title": "HABITANA FIRPO",
+    "category": "Departamento",
+    "neighborhood": "Cofico",
+    "city": "Córdoba",
+    "province": "Córdoba",
+    "guests": 3,
+    "rooms": 2,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": true,
+    "published": false,
+    "nightlyRate": 94000,
+    "legacyNightlyRate": 60000,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "balcon",
+      "calefaccion",
+      "estacionamiento",
+      "lavarropas",
+      "parrilla",
+      "pet-friendly",
+      "pileta",
+      "ropa-blanca",
+      "terraza",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Una propuesta cómoda en Cofico, con espacios para disfrutar la ciudad y relajarse.",
+    "description": [
+      "HABITANA FIRPO es un departamento de dos ambientes con capacidad para hasta tres personas, ubicado en el barrio Cofico de Córdoba. Cuenta con balcón y parrilla, terraza, estacionamiento, aire acondicionado, Wi-Fi, televisión y lavarropas.",
+      "Su ubicación permite organizar recorridos por la ciudad y volver a un espacio pensado para descansar."
+    ],
+    "images": [
+      "/images/temporarios/demo-arena.jpg",
+      "/images/temporarios/demo-oliva.jpg"
+    ],
+    "videos": [],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": "Proximidades: - Centro cívico: 3 km - Shopping Patio Olmos: 3,5 km - Aeropuerto: 9 km",
+    "coordinates": null,
+    "legacyColor": "#00d3d6",
+    "pointsOfInterestLegacy": [],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "15:00",
+    "checkOutTime": "11:00",
+    "minimumNights": 2,
+    "depositPercentage": 30,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [],
+    "contentStatus": "draft"
+  },
+  {
+    "id": "dCNV3fdeeJlLigYVc3ZY",
+    "legacyId": "dCNV3fdeeJlLigYVc3ZY",
+    "slug": "la-escalerita-pa",
+    "title": "LA ESCALERITA PA",
+    "category": "Departamento",
+    "neighborhood": null,
+    "city": "Córdoba",
+    "province": "Córdoba",
+    "guests": 2,
+    "rooms": 1,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": true,
+    "published": false,
+    "nightlyRate": 65000,
+    "legacyNightlyRate": 55000,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "pet-friendly",
+      "ropa-blanca",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Una alternativa funcional para alojarse en Córdoba.",
+    "description": [
+      "Espacio de un ambiente preparado para hasta dos huéspedes. Cuenta con aire acondicionado, Wi-Fi, televisión y ropa de cama.",
+      "El acceso se realiza mediante una escalera caracol, un detalle importante para considerar antes de elegir este alojamiento."
+    ],
+    "images": [
+      "/images/temporarios/demo-arena.jpg"
+    ],
+    "videos": [],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": "Para acceder al departamento hay que subir una hermosa escalera en forma de caracol. Consultar para más información.",
+    "coordinates": null,
+    "legacyColor": "#BFA6E3",
+    "pointsOfInterestLegacy": [],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "15:00",
+    "checkOutTime": "10:00",
+    "minimumNights": 2,
+    "depositPercentage": 30,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [
+      "El acceso al alojamiento se realiza por una escalera caracol."
+    ],
+    "contentStatus": "draft"
+  },
+  {
+    "id": "fnVaX9dMNjSUb7FCudj8",
+    "legacyId": "fnVaX9dMNjSUb7FCudj8",
+    "slug": "michaux",
+    "title": "MICHAUX",
+    "category": "Departamento",
+    "neighborhood": null,
+    "city": "Córdoba",
+    "province": "Córdoba",
+    "guests": 3,
+    "rooms": 2,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": false,
+    "published": false,
+    "nightlyRate": 78000,
+    "legacyNightlyRate": 60000,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "calefaccion",
+      "pet-friendly",
+      "ropa-blanca",
+      "seguridad",
+      "terraza",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Un espacio práctico para organizar tu estadía en Córdoba.",
+    "description": [
+      "Departamento de dos ambientes para hasta tres huéspedes, con Wi-Fi, aire acondicionado, calefacción, terraza y televisión.",
+      "Una opción para quienes desean un lugar cómodo para descansar y recorrer la ciudad."
+    ],
+    "images": [
+      "/images/temporarios/demo-arena.jpg",
+      "/images/temporarios/demo-oliva.jpg"
+    ],
+    "videos": [
+      "/videos/temporarios/demo-video.mp4"
+    ],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": null,
+    "coordinates": null,
+    "legacyColor": "#BFA6E3",
+    "pointsOfInterestLegacy": [],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00",
+    "minimumNights": 2,
+    "depositPercentage": 50,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [],
+    "contentStatus": "draft"
+  },
+  {
+    "id": "jSHatXGU1Bugnl8BLj32",
+    "legacyId": "jSHatXGU1Bugnl8BLj32",
+    "slug": "annica",
+    "title": "ANNICA",
+    "category": "Departamento",
+    "neighborhood": null,
+    "city": "Córdoba",
+    "province": "Córdoba",
+    "guests": 3,
+    "rooms": 2,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": true,
+    "published": false,
+    "nightlyRate": 90000,
+    "legacyNightlyRate": 60000,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "balcon",
+      "calefaccion",
+      "pet-friendly",
+      "pileta",
+      "ropa-blanca",
+      "seguridad",
+      "terraza",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Comodidad y espacios para disfrutar una escapada urbana.",
+    "description": [
+      "Departamento de dos ambientes para hasta tres personas, con balcón, terraza, pileta, calefacción, aire acondicionado, Wi-Fi y televisión.",
+      "Una propuesta que combina equipamiento cotidiano con comodidades para relajarse."
+    ],
+    "images": [],
+    "videos": [],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": null,
+    "coordinates": null,
+    "legacyColor": "#BFA6E3",
+    "pointsOfInterestLegacy": [],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "15:00",
+    "checkOutTime": "11:00",
+    "minimumNights": 3,
+    "depositPercentage": 30,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [],
+    "contentStatus": "draft"
+  },
+  {
+    "id": "jYQ7KGfG7W0T3BwIhx6C",
+    "legacyId": "jYQ7KGfG7W0T3BwIhx6C",
+    "slug": "cofico-ideal-iii",
+    "title": "COFICO IDEAL III",
+    "category": "Departamento",
+    "neighborhood": "Cofico",
+    "city": "Córdoba",
+    "province": "Córdoba",
+    "guests": 2,
+    "rooms": 2,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": true,
+    "published": false,
+    "nightlyRate": 86000,
+    "legacyNightlyRate": 60000,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "balcon",
+      "estacionamiento",
+      "parrilla",
+      "pet-friendly",
+      "pileta",
+      "ropa-blanca",
+      "seguridad",
+      "terraza",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Una opción cómoda para conocer Córdoba desde Cofico.",
+    "description": [
+      "Departamento de dos ambientes preparado para dos huéspedes. Incluye Wi-Fi, aire acondicionado, balcón, terraza, pileta, parrilla y estacionamiento.",
+      "Para utilizar el estacionamiento, es importante consultar previamente las dimensiones del vehículo por el sistema de acceso mediante montacargas."
+    ],
+    "images": [
+      "/images/temporarios/demo-arena.jpg",
+      "/images/temporarios/demo-oliva.jpg"
+    ],
+    "videos": [],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": "El estacionamiento tiene entrada por montacargas, lo cual limita el tamaño del auto. Autos permitidos y similares: - Renault Duster - Fiat Chronos - Ford EcoSport Consultar por su auto.",
+    "coordinates": null,
+    "legacyColor": "#BFA6E3",
+    "pointsOfInterestLegacy": [],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "15:00",
+    "checkOutTime": "11:00",
+    "minimumNights": 2,
+    "depositPercentage": 30,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [
+      "El estacionamiento tiene acceso por montacargas. Consultar previamente si el vehículo es compatible con las dimensiones permitidas."
+    ],
+    "contentStatus": "draft"
+  },
+  {
+    "id": "v6l2bYww8cV9wXKdlZhB",
+    "legacyId": "v6l2bYww8cV9wXKdlZhB",
+    "slug": "pampa-mora",
+    "title": "PAMPA MORA",
+    "category": "Departamento",
+    "neighborhood": null,
+    "city": "Córdoba",
+    "province": "Córdoba",
+    "guests": 3,
+    "rooms": 2,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": true,
+    "published": false,
+    "nightlyRate": 83000,
+    "legacyNightlyRate": 60000,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "balcon",
+      "estacionamiento",
+      "parrilla",
+      "pet-friendly",
+      "ropa-blanca",
+      "seguridad",
+      "terraza",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Un espacio para instalarte con comodidad y disfrutar de Córdoba.",
+    "description": [
+      "Departamento de dos ambientes para hasta tres huéspedes, con Wi-Fi, aire acondicionado, balcón, terraza, parrilla y estacionamiento.",
+      "Una alternativa funcional para organizar tus días y descansar a tu propio ritmo."
+    ],
+    "images": [
+      "/images/temporarios/demo-arena.jpg",
+      "/images/temporarios/demo-oliva.jpg"
+    ],
+    "videos": [],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": null,
+    "coordinates": null,
+    "legacyColor": "#BFA6E3",
+    "pointsOfInterestLegacy": [],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "14:00",
+    "checkOutTime": "10:00",
+    "minimumNights": 2,
+    "depositPercentage": 50,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [],
+    "contentStatus": "draft"
+  },
+  {
+    "id": "yclylyzYIvZnKqbEw91l",
+    "legacyId": "yclylyzYIvZnKqbEw91l",
+    "slug": "cofico-ideal-ii",
+    "title": "COFICO IDEAL II",
+    "category": "Departamento",
+    "neighborhood": "Cofico",
+    "city": "Córdoba",
+    "province": "córdoba",
+    "guests": 3,
+    "rooms": 3,
+    "bedrooms": null,
+    "bathrooms": null,
+    "areaM2": null,
+    "featured": false,
+    "legacyActive": true,
+    "published": false,
+    "nightlyRate": 90000,
+    "legacyNightlyRate": 60000,
+    "currency": "ARS",
+    "amenities": [
+      "aire",
+      "cable",
+      "estacionamiento",
+      "lavarropas",
+      "parrilla",
+      "patio",
+      "pet-friendly",
+      "pileta",
+      "ropa-blanca",
+      "seguridad",
+      "terraza",
+      "tv",
+      "wifi"
+    ],
+    "smokingAllowedLegacy": false,
+    "summary": "Un espacio versátil en Cofico para disfrutar una estadía en Córdoba.",
+    "description": [
+      "Departamento de tres ambientes con capacidad para hasta tres personas. Cuenta con patio, terraza, pileta, parrilla, estacionamiento, aire acondicionado, Wi-Fi y lavarropas.",
+      "El estacionamiento tiene acceso mediante montacargas; conviene consultar antes de llegar si el vehículo puede ingresar."
+    ],
+    "images": [
+      "/images/temporarios/demo-arena.jpg",
+      "/images/temporarios/demo-oliva.jpg"
+    ],
+    "videos": [],
+    "rules": [
+      "No se permite fumar dentro del alojamiento.",
+      "Respetar los horarios de descanso y las normas de convivencia.",
+      "La cantidad de huéspedes no puede superar la capacidad indicada."
+    ],
+    "legacyNotes": "El estacionamiento tiene entrada por montacargas, lo cual limita el tamaño del auto. Autos permitidos y similares: - Renault Duster - Fiat Chronos - Ford EcoSport Consultar por su auto. ",
+    "coordinates": null,
+    "legacyColor": "#00db42",
+    "pointsOfInterestLegacy": [
+      "direccion1url",
+      "direccion2url"
+    ],
+    "dataStatus": "historical-unverified",
+    "checkInTime": "15:00",
+    "checkOutTime": "11:00",
+    "minimumNights": 2,
+    "depositPercentage": 30,
+    "paymentMethods": [
+      "Transferencia bancaria"
+    ],
+    "availability": null,
+    "publicAddress": null,
+    "importantInfo": [
+      "El estacionamiento tiene acceso por montacargas. Consultar previamente si el vehículo es compatible con las dimensiones permitidas."
+    ],
+    "contentStatus": "draft"
+  }
+]
