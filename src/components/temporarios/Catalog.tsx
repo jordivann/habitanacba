@@ -244,40 +244,38 @@ export function Catalog({ properties }: CatalogProps) {
         </Reveal>
 
         {/* LISTADO DE DEPARTAMENTOS */}
-        <Reveal>
-          {visible.length > 0 ? (
-            <div className={styles.grid}>
-              {visible.map((property) => (
-                <Reveal
-                  key={property.id}
-                  delay={0.2}
-                >
-                  <PropertyCard
-                    property={property}
-                  />
-                </Reveal>
-              ))}
-            </div>
-          ) : (
-            <div className={styles.empty}>
-              <h2 className="serif">
-                No encontramos coincidencias.
-              </h2>
-
-              <p>
-                Probá seleccionando otra zona o
-                quitando algunas comodidades.
-              </p>
-
-              <button
-                type="button"
-                onClick={resetFilters}
+                
+        {/* LISTADO DE DEPARTAMENTOS */}
+        {visible.length > 0 ? (
+          <div className={styles.grid}>
+            {visible.map((property, index) => (
+              <Reveal
+                key={property.id}
+                delay={Math.min(index * 0.05, 0.2)}
               >
-                Ver todos los alojamientos
-              </button>
-            </div>
-          )}
-        </Reveal>
+                <PropertyCard property={property} />
+              </Reveal>
+            ))}
+          </div>
+        ) : (
+          <div className={styles.empty}>
+            <h2 className="serif">
+              No encontramos coincidencias.
+            </h2>
+
+            <p>
+              Probá seleccionando otra zona o quitando
+              algunas comodidades.
+            </p>
+
+            <button
+              type="button"
+              onClick={resetFilters}
+            >
+              Ver todos los alojamientos
+            </button>
+          </div>
+        )}
 
       </div>
     </section>
