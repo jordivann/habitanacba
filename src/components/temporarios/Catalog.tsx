@@ -6,15 +6,16 @@ import { useMemo, useState } from 'react';
 import {
   AMENITIES,
   type AmenityKey,
-  type Property,
-} from '@/lib/properties';
+  type PublicPropertyCard,
+} from '@/lib/property-public';
 
 import { PropertyCard } from './PropertyCard';
-import styles from './Catalog.module.css';
 import { Reveal } from '../motion/Reveal/Reveal';
 
+import styles from './Catalog.module.css';
+
 type CatalogProps = {
-  properties: Property[];
+  properties: PublicPropertyCard[];
 };
 
 const quickAmenities: AmenityKey[] = [
@@ -31,20 +32,21 @@ export function Catalog({ properties }: CatalogProps) {
   const [guests, setGuests] = useState('1');
   const [amenities, setAmenities] = useState<AmenityKey[]>([]);
 
-  const neighborhoods = useMemo(
-    () => [
-      'Todas las zonas',
-      ...Array.from(
-        new Set(
-          properties
-            .map((property) => property.neighborhood)
-            .filter((value): value is string => Boolean(value))
-        )
-      ).sort((a, b) => a.localeCompare(b, 'es')),
-    ],
-    [properties]
-  );
+  // Zonas disponibles según las propiedades públicas.
+  const neighborhoods = useMemo(() => {
+    const zones = properties
+      .map((property) => property.neighborhood)
+      .filter((value): value is string => Boolean(value));
 
+    return [
+      'Todas las zonas',
+      ...Array.from(new Set(zones)).sort((a, b) =>
+        a.localeCompare(b, 'es')
+      ),
+    ];
+  }, [properties]);
+
+  // Aplicación de filtros.
   const visible = useMemo(() => {
     return properties.filter((property) => {
       const matchesZone =
@@ -58,7 +60,11 @@ export function Catalog({ properties }: CatalogProps) {
         (amenity) => property.amenities.includes(amenity)
       );
 
-      return matchesZone && matchesGuests && matchesAmenities;
+      return (
+        matchesZone &&
+        matchesGuests &&
+        matchesAmenities
+      );
     });
   }, [properties, zone, guests, amenities]);
 
@@ -87,162 +93,192 @@ export function Catalog({ properties }: CatalogProps) {
       aria-labelledby="catalog-title"
     >
       <div className="container">
+
+        {/* ENCABEZADO */}
         <Reveal delay={0.02}>
-
-            <div className={styles.head}>
+          <div className={styles.head}>
             <div>
-                <p className={styles.eyebrow}>
+              <p className={styles.eyebrow}>
                 ESTADÍAS EN CÓRDOBA CAPITAL
-                </p>
+              </p>
 
-                <h1
+              <h1
                 id="catalog-title"
                 className={`serif ${styles.title}`}
-                >
+              >
                 Encontrá tu lugar <em>en la ciudad.</em>
-                </h1>
+              </h1>
 
-                <p>
+              <p>
                 Descubrí los espacios de HABITANA y encontrá
                 el alojamiento que mejor se adapte a tu estadía.
-                </p>
+              </p>
             </div>
 
             <div className={styles.note}>
-                Departamentos ·
-                Consulte <a href="https://wa.me/5493511231243" target="_blank" rel="noopener noreferrer">disponibilidad</a>
+              Departamentos ·{' '}
+              Consulte{' '}
+              <a
+                href="https://wa.me/5493511231243"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                disponibilidad
+              </a>
             </div>
-            </div>
+          </div>
         </Reveal>
 
+        {/* FILTROS PRINCIPALES */}
         <Reveal delay={0.02}>
-
-            <div
+          <div
             className={styles.filters}
             role="group"
             aria-label="Filtros de alojamientos"
-            >
+          >
             <label>
-                <span>Zona</span>
+              <span>Zona</span>
 
-                <select
+              <select
                 value={zone}
-                onChange={(event) => setZone(event.target.value)}
-                >
+                onChange={(event) =>
+                  setZone(event.target.value)
+                }
+              >
                 {neighborhoods.map((neighborhood) => (
-                    <option
+                  <option
                     key={neighborhood}
                     value={neighborhood}
-                    >
+                  >
                     {neighborhood}
-                    </option>
+                  </option>
                 ))}
-                </select>
+              </select>
             </label>
 
             <label>
-                <span>Huéspedes</span>
+              <span>Huéspedes</span>
 
-                <select
+              <select
                 value={guests}
-                onChange={(event) => setGuests(event.target.value)}
-                >
+                onChange={(event) =>
+                  setGuests(event.target.value)
+                }
+              >
                 {[1, 2, 3, 4].map((number) => (
-                    <option key={number} value={number}>
+                  <option key={number} value={number}>
                     {number}{' '}
-                    {number === 1 ? 'persona' : 'personas'}
-                    </option>
+                    {number === 1
+                      ? 'persona'
+                      : 'personas'}
+                  </option>
                 ))}
-                </select>
+              </select>
             </label>
 
             <div className={styles.coming}>
-                <span>Ingreso y salida</span>
-                <strong>Disponibilidad próximamente</strong>
+              <span>Ingreso y salida</span>
+              <strong>
+                Disponibilidad próximamente
+              </strong>
             </div>
-            </div>
+          </div>
         </Reveal>
 
+        {/* COMODIDADES */}
         <Reveal>
-
-            <div
+          <div
             className={styles.chips}
             role="group"
             aria-label="Filtrar por comodidades"
-            >
+          >
             {quickAmenities.map((amenity) => {
-                const selected = amenities.includes(amenity);
+              const selected = amenities.includes(amenity);
 
-                return (
+              return (
                 <button
-                    key={amenity}
-                    type="button"
-                    aria-pressed={selected}
-                    className={selected ? styles.active : ''}
-                    onClick={() => toggleAmenity(amenity)}
+                  key={amenity}
+                  type="button"
+                  aria-pressed={selected}
+                  className={
+                    selected ? styles.active : ''
+                  }
+                  onClick={() =>
+                    toggleAmenity(amenity)
+                  }
                 >
-                    {AMENITIES[amenity]}
+                  {AMENITIES[amenity]}
                 </button>
-                );
+              );
             })}
 
             {hasActiveFilters && (
-                <button
+              <button
                 type="button"
                 className={styles.reset}
                 onClick={resetFilters}
-                >
+              >
                 Limpiar filtros
-                </button>
+              </button>
             )}
-            </div>
+          </div>
         </Reveal>
+
+        {/* RESULTADOS */}
         <Reveal>
-            <div className={styles.results} aria-live="polite">
+          <div
+            className={styles.results}
+            aria-live="polite"
+          >
             <span>
-                {visible.length}{' '}
-                {visible.length === 1
+              {visible.length}{' '}
+              {visible.length === 1
                 ? 'alojamiento encontrado'
                 : 'alojamientos encontrados'}
             </span>
 
-            <span>Tarifas y disponibilidad por confirmar</span>
-            </div>
-
+            <span>
+              Tarifas y disponibilidad por confirmar
+            </span>
+          </div>
         </Reveal>
 
+        {/* LISTADO DE DEPARTAMENTOS */}
         <Reveal>
-            {visible.length > 0 ? (
+          {visible.length > 0 ? (
             <div className={styles.grid}>
-                {visible.map((property) => (
-                    <Reveal
-                        key={property.id}
-                        delay={0.2}
-                    >
-                        <PropertyCard property={property} />
-                    </Reveal>
-                    ))}
+              {visible.map((property) => (
+                <Reveal
+                  key={property.id}
+                  delay={0.2}
+                >
+                  <PropertyCard
+                    property={property}
+                  />
+                </Reveal>
+              ))}
             </div>
-            ) : (
+          ) : (
             <div className={styles.empty}>
-                <h2 className="serif">
+              <h2 className="serif">
                 No encontramos coincidencias.
-                </h2>
+              </h2>
 
-                <p>
-                Probá seleccionando otra zona o quitando
-                algunas comodidades.
-                </p>
+              <p>
+                Probá seleccionando otra zona o
+                quitando algunas comodidades.
+              </p>
 
-                <button
+              <button
                 type="button"
                 onClick={resetFilters}
-                >
+              >
                 Ver todos los alojamientos
-                </button>
+              </button>
             </div>
-            )}
+          )}
         </Reveal>
+
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+export const dynamic = 'force-static';
 export const site = {
   name: 'HABITANA',
   tagline: 'Espacios para estar. Gestión para confiar.',

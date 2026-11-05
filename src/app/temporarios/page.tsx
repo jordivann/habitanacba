@@ -2,8 +2,10 @@
 import type { Metadata } from 'next';
 
 import { Catalog } from '@/components/temporarios/Catalog';
-import { catalogProperties } from '@/lib/properties';
 import { Reveal } from '@/components/motion/Reveal/Reveal';
+
+import { catalogProperties } from '@/lib/properties';
+import { toPublicPropertyCard } from '@/lib/property-public';
 
 export const metadata: Metadata = {
   title: 'Alquileres temporarios en Córdoba',
@@ -16,10 +18,14 @@ export const metadata: Metadata = {
 };
 
 export default function TemporariosPage() {
-  return (<>
-  <Reveal>
-    <Catalog properties={catalogProperties} />;
+  // Solo enviamos al catálogo la información pública.
+  const publicProperties = catalogProperties.map(
+    toPublicPropertyCard
+  );
 
-  </Reveal>
-  </>)
+  return (
+    <Reveal>
+      <Catalog properties={publicProperties} />
+    </Reveal>
+  );
 }

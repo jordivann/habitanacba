@@ -1,13 +1,16 @@
 
 import Link from 'next/link';
 
-import type { Property } from '@/lib/properties';
+import type {
+  PublicPropertyCard,
+} from '@/lib/property-public';
 
 import { PropertyImage } from './PropertyImage';
+
 import styles from './PropertyCard.module.css';
 
 type PropertyCardProps = {
-  property: Property;
+  property: PublicPropertyCard;
 };
 
 export function PropertyCard({
@@ -23,26 +26,32 @@ export function PropertyCard({
   const capacity =
     property.guests != null
       ? `Hasta ${property.guests} ${
-          property.guests === 1 ? 'huésped' : 'huéspedes'
+          property.guests === 1
+            ? 'huésped'
+            : 'huéspedes'
         }`
       : 'Capacidad por confirmar';
 
   return (
     <article className={styles.card}>
+      {/* IMAGEN */}
       <Link
         href={href}
         className={styles.imageLink}
         aria-label={`Conocer ${property.title}`}
       >
         <PropertyImage
-          src={property.images[0]}
+          src={
+            property.coverImage ??
+            '/images/temporarios/demo-oliva.jpg'
+          }
           alt={`Fotografía de ${property.title}`}
           sizes="(max-width: 680px) 100vw, (max-width: 1040px) 50vw, 33vw"
           className={styles.image}
         />
-
       </Link>
 
+      {/* INFORMACIÓN */}
       <div className={styles.body}>
         <div className={styles.heading}>
           <h3 className="serif">
@@ -54,12 +63,15 @@ export function PropertyCard({
           <span>{property.category}</span>
         </div>
 
-        <p className={styles.place}>{location}</p>
+        <p className={styles.place}>
+          {location}
+        </p>
 
         <p className={styles.summary}>
           {property.summary}
         </p>
 
+        {/* PIE DE TARJETA */}
         <div className={styles.bottom}>
           <div>
             <small>Capacidad</small>
